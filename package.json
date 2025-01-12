@@ -1,0 +1,10 @@
+{
+  "name": "my-project",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon --exec python main.py"
+  },
+  "dependencies": {
+    "nodemon": "^2.0.12"
+  }
+}
