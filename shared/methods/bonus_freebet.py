@@ -52,9 +52,9 @@ async def add_freebet_bonus(user: User):
 async def send_bonus(user: User, photo_path: str, text: str):
     await clear_chat(user)
     keyboard = kb.main_kb(user.player_id == -31415926)
-    hello_message = await bot.send_message(chat_id=user.telegram_id, text="Привет!", reply_markup=keyboard)
+    hello_message = await bot.send_message(chat_id=int(user.telegram_id), text="Привет!", reply_markup=keyboard)
     msg = await bot.send_photo(
-        chat_id=user.telegram_id,
+        chat_id=int(user.telegram_id),
         photo=FSInputFile(photo_path),
         caption=text
     )

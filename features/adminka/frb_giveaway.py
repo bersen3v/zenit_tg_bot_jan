@@ -212,11 +212,12 @@ async def helloworld(message: Message, state: FSMContext):
     photo = FSInputFile(data['photo_path'])
     keyboard = ids_frb_mailing_final_kb()
 
+    caption = f"{data['text']}\n\n-----\nДанные для сверки\n\nимя фрибета: {data['frb_name']}\nсумма фрибета: {data['frb_count']}"
     try:
         await bot.edit_message_media(
             media=InputMediaPhoto(
                 media=photo,
-                caption=data['text'],
+                caption=caption
             ),
             chat_id=user.telegram_id,
             message_id=user.last_message_id,

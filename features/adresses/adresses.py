@@ -19,13 +19,13 @@ async def command_hello_handler(message: Message) -> None:
         "[ул. Ладо Кецховели 26/1](https://yandex.ru/maps/-/CDXOiPLP)\n"
         "[ул. Карла Маркса 51](https://yandex.ru/maps/-/CDXOiGnq)\n"
         "[ул. Взлетная ба](https://yandex.ru/maps/-/CDXOmUoR)\n"
-        "[ул. Ястынская 16](https://yandex.ru/maps/-/CDXOm42K)\n"
         "[пр-т Красноярский Рабочий 176д/1](https://yandex.ru/maps/-/CDXOqN8a)\n"
         "[пр-т Красноярский Рабочий 91](https://yandex.ru/maps/-/CDXOqZYi)\n"
         "[ул. Павлова 11](https://yandex.ru/maps/-/CDXOqG2e)\n"
         "[ул. 26 Бакинских Комиссаров 44](https://yandex.ru/maps/-/CDXOqSmQ)\n"
         "[ул. Авиаторов 68а](https://yandex.ru/maps/-/CDXOq09z)\n"
-        "[Ул. Крупской 1г](https://yandex.ru/maps/-/CDXOqHyP)\n"
+        "[ул. Крупской 1г](https://yandex.ru/maps/-/CDXOqHyP)\n"
+        "[пр-т Комсомольский 1, к.1](https://2gis.ru/krasnoyarsk/geo/985798073695894?m=92.935014%2C56.060415%2F15.95)\n"
     )
 
     try:

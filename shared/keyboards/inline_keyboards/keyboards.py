@@ -90,7 +90,7 @@ def mailing_kb():
     kb_list = [
         [InlineKeyboardButton(text="Рассылка всем", callback_data="mailing_to_all")],
         [InlineKeyboardButton(text="Рассылка авторизованным", callback_data="mailing_to_authorized")],
-        [InlineKeyboardButton(text="Рассылка по номеру игрока", callback_data="ids_mailing")],
+        [InlineKeyboardButton(text="Рассылка по номерам игроков", callback_data="ids_mailing")],
         [InlineKeyboardButton(text="Рассылка видео", callback_data="send_circle_video")],
 
     ]

@@ -18,11 +18,16 @@ dp.include_router(router)
 
 async def send_mes():
     users = await tg_users_data.get_all_users()
-    await send_stat_to_admins()
+
     for user in users:
-        await add_freebet_bonus(user)
-        if user.birthday != " ":
-            await add_birthday_bonus(user)
+        try:
+            await add_freebet_bonus(user)
+            if user.birthday != " ":
+                await add_birthday_bonus(user)
+        except Exception as e:
+            print(e)
+
+    await send_stat_to_admins()
 
 
 async def periodic_send():
