@@ -11,7 +11,7 @@ stocks_map = {
         'description': "Фрибет за регистрацию",
     },
     "stocks_Фрибет в день рождения": {
-        'photo': "assets/freebet_555.png",
+        'photo': "assets/freebet_555.jpeg",
         'description': "Фрибет в день рождения",
     },
     "stocks_Группа с розыгрышами": {

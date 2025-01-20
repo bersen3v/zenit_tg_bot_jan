@@ -24,7 +24,7 @@ async def add_birthday_bonus(user: User):
         hello_message = await bot.send_message(chat_id=user.telegram_id, text="Привет!", reply_markup=keyboard)
         msg = await bot.send_photo(
             chat_id=user.telegram_id,
-            photo=FSInputFile('assets/freebet_555.png'),
+            photo=FSInputFile('assets/freebet_555.jpeg'),
             caption="С днем рождения! Дарим тебе фрибет на 555 рублей! Он находится в твоем личном кабинете"
         )
         user.last_message_id = msg.message_id
