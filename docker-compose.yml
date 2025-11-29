@@ -1,0 +1,5 @@
+services:
+  telegram-bot:
+    build: .
+    container_name: my-telegram-bot
+    restart: unless-stopped

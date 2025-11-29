@@ -71,6 +71,7 @@ class TelegramUsersData:
                    VALUES ({user.telegram_id}, '{user.username}', '{user.first_name}', '{user.last_name}', {user.last_message_id}, '{user.all_messages}', {user.is_admin}, {user.player_id}, '{user.reg_date}', '{user.birthday}', {user.authorized}, '{user.freebets}')
                ''')
             await connection.commit()
+
         async with aiosqlite.connect(self.database_path) as connection:
             cursor = await connection.execute(
                 F'SELECT * FROM {T.telegram_users_table} WHERE {C.tg_id} = {user.telegram_id}')
